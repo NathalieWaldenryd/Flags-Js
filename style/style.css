@@ -1,0 +1,296 @@
+html {
+    background-image: url(http://www.blizzplanet.com/wp-content/uploads/hearthstone-Card-Box-Cinematic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    background-position: center;
+    overflow: auto;
+}
+
+.logo {
+    -moz-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    display: block;
+    margin: auto;
+}
+
+h3 {
+    color: #fbe47b;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    color: #391d1b;
+}
+
+footer a:hover {
+    color: #fbe47b;
+}
+
+.card.active .wrapper,
+.card.solved .wrapper {
+    transform: rotateY(180deg);
+}
+
+.card.solved {
+    pointer-events: none;
+}
+
+.content {
+    background-color: transparent;
+    padding: 2em;
+    margin: 0 auto;
+    height: 500px;
+    width: 1000px;
+    border-radius: 30px;
+}
+
+.card .front.side {
+    transform: rotateY(180deg);
+}
+
+.card {
+    width: 150px;
+    height: 200px;
+    position: relative;
+    margin: 15px;
+    float: left;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+}
+
+.card .side {
+    backface-visibility: hidden;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+}
+
+.back.side {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(http://media-hearth.cursecdn.com/attachments/39/719/cardback_60.png);
+}
+
+.flag {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    display: block;
+    margin: 20px;
+    transform: scale(0.35) translate(5px, 105px);
+    transform-origin: top left;
+}
+
+.flag.sverige {
+    width: 400px;
+    height: 250px;
+    transform: scale(0.28) translate(5px, 150px);
+}
+
+.grönland {
+    background-color: #fff;
+}
+
+.grönland .part1 {
+    width: 300px;
+    height: 100px;
+    background-color: #d20c2e;
+    position: absolute;
+    top: 100px;
+}
+
+.grönland .part2 {
+    height: 66px;
+    width: 133px;
+    border-radius: 133px 133px 0 0;
+    background: #d20c2e;
+    position: absolute;
+    top: 34px;
+    left: 50px;
+}
+
+.grönland .part3 {
+    height: 66px;
+    width: 133px;
+    border-radius: 0 0 133px 133px;
+    background: #fff;
+    position: absolute;
+    bottom: 33.4px;
+    left: 50px;
+}
+
+.sydafrika {
+    background-color: #fff;
+}
+
+.sydafrika .part1 {
+    height: 60px;
+    width: 140px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #e23d28;
+}
+
+.sydafrika .part2 {
+    height: 60px;
+    width: 140px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #0c1c8c;
+}
+
+.sydafrika .part3 {
+    width: 20px;
+    height: 200px;
+    background-color: #007c59;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sydafrika .part4 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 0 100px 173.2px;
+    border-color: transparent transparent transparent #007c59;
+    position: absolute;
+    top: 0;
+    left: 19px;
+}
+
+.sydafrika .part5 {
+    width: 0;
+    height: 0;
+    border-left: 114px solid #fcb514;
+    border-top: 76px solid transparent;
+    border-bottom: 76px solid transparent;
+    position: absolute;
+    left: 0;
+    top: 24px;
+}
+
+.sydafrika .part6 {
+    width: 0;
+    height: 0;
+    border-left: 90px solid #000;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    position: absolute;
+    left: 0;
+    top: 40px;
+}
+
+.sydafrika .part7 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100px 60px 0;
+    border-color: transparent #e23d28 transparent transparent;
+    position: absolute;
+    top: 0;
+    left: 61px;
+}
+
+.sydafrika .part8 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 60px 100px;
+    border-color: transparent transparent #0c1c8c;
+    position: absolute;
+    bottom: 0;
+    left: 61px;
+}
+
+.sydafrika .part9 {
+    height: 40px;
+    width: 186px;
+    background-color: #007c59;
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+
+.sverige {
+    background-color: #005b96;
+}
+
+.sverige .part1 {
+    height: 50px;
+    width: 400px;
+    background-color: #fcd03b;
+    position: absolute;
+    left: 0;
+    top: 100px;
+}
+
+.sverige .part2 {
+    width: 50px;
+    height: 250px;
+    background-color: #fcd03b;
+    position: absolute;
+    left: 125px;
+    top: 0;
+}
+
+.elfenbenskusten {
+    background-color: #fff;
+}
+
+.elfenbenskusten .part1 {
+    width: 100px;
+    height: 200px;
+    background-color: #f77f1c;
+    position: absolute;
+}
+
+.elfenbenskusten .part2 {
+    width: 100px;
+    height: 200px;
+    background-color: #009d65;
+    position: absolute;
+    top: 0;
+    left: 200px;
+}
+
+.frankrike {
+    background-color: #fff;
+}
+
+.frankrike .part1 {
+    width: 100px;
+    height: 200px;
+    background-color: #022891;
+    position: absolute;
+}
+
+.frankrike .part2 {
+    width: 100px;
+    height: 200px;
+    background-color: #ee2c38;
+    position: absolute;
+    top: 0;
+    left: 200px;
+}
